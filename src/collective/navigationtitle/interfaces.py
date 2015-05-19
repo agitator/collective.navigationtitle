@@ -7,5 +7,8 @@ from zope.interface import Interface
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
 
-class ICollectiveNavigationtitleLayer(IDefaultBrowserLayer):
+class INavigationTitleLayer(IDefaultBrowserLayer):
     """Marker interface that defines a browser layer."""
+
+class IShortTitleNavtreeStrategy(Interface):
+    """Marker Interface for the NavigationTitle"""
