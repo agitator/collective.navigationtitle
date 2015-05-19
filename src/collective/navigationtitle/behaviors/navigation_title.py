@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from collective.navigationtitle import _
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.autoform.directives import order_after
@@ -9,7 +10,7 @@ from zope.interface import provider
 
 @provider(IFormFieldProvider)
 class INavigationTitle(model.Schema):
-    """Add tags to content
+    """Adds a field for navigation title after the original title.
     """
 
     order_after(navigation_title='IBasic.title')
@@ -30,11 +31,10 @@ class NavigationTitle(object):
     def __init__(self, context):
         self.context = context
 
-#    @property
-#    def tags(self):
-#        return set(self.context.Subject())
-#    @tags.setter
-#    def tags(self, value):
-#        if value is None:
-#            value = ()
-#        self.context.setSubject(tuple(value))
+    @property
+    def navigation_title(self):
+        return getattr(self.context._navigation_title, None)
+
+    @navigation_title.setter
+    def navigation_title(self, value):
+        self.context._navigation_title = value
