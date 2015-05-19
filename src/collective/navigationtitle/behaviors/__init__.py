@@ -1,1 +1,1 @@
-from .navigation_title import INavigationtitle
+from .navigation_title import INavigationTitle
