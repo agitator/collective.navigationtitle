@@ -26,7 +26,7 @@ class TestSetup(unittest.TestCase):
         self.assertFalse(self.installer.isProductInstalled('collective.navigationtitle'))
 
     def test_browserlayer(self):
-        """Test that ICollectiveNavigationtitleLayer is registered."""
-        from collective.navigationtitle.interfaces import ICollectiveNavigationtitleLayer
+        """Test that INavigationTitleLayer is registered."""
+        from collective.navigationtitle.interfaces import INavigationTitleLayer
         from plone.browserlayer import utils
-        self.assertIn(ICollectiveNavigationtitleLayer, utils.registered_layers())
+        self.assertIn(INavigationTitleLayer, utils.registered_layers())

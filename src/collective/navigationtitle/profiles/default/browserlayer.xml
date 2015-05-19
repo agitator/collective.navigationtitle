@@ -2,6 +2,6 @@
 <layers>
   <layer
     name="collective.navigationtitle"
-    interface="collective.navigationtitle.interfaces.ICollectiveNavigationtitleLayer"
+    interface="collective.navigationtitle.interfaces.INavigationTitleLayer"
   />
 </layers>
