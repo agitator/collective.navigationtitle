@@ -11,6 +11,7 @@
         title="Navigation Title"
         description="Add a field that allows to add a navigation title"
         provides=".navigation_title.INavigationTitle"
+        marker=".navigation_title.INavigationTitle"
         factory=".navigation_title.NavigationTitle"
         />
 
