@@ -43,7 +43,11 @@ setup(
     install_requires=[
         'plone.api',
         'setuptools',
-        'z3c.jbot',
+        'plone.behavior',
+        'zope.schema',
+        'zope.interface',
+        'zope.component',
+
     ],
     extras_require={
         'test': [
