@@ -12,6 +12,12 @@
     <include package=".browser" />
     <include package=".behaviors" />
 
+    <include file="indexers.zcml" />
+
+    <adapter factory=".navigation.ShortTitleNavtreeStrategy"
+             for="collective.navigationtitle.interfaces.INavigationTitleLayer"
+             provides=".interfaces.IShortTitleNavtreeStrategy" />
+
     <genericsetup:registerProfile
         name="default"
         title="collective.navigationtitle"
