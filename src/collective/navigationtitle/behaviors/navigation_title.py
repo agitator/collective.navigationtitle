@@ -37,5 +37,4 @@ class NavigationTitle(object):
 
     @navigation_title.setter
     def navigation_title(self, value):
-        import ipdb; ipdb.set_trace()
         self.context._navigation_title = value
