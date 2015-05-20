@@ -25,7 +25,7 @@ class BrainWrapper(object):
 
 
 @implementer(INavtreeStrategy)
-@adapter(INavigationRoot, INavigationPortlet)
+@adapter(IContentish, INavigationPortlet)
 class ShortTitleNavtreeStrategy(NavtreeStrategyBase):
 
     def decoratorFactory(self, node):
