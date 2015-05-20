@@ -14,8 +14,7 @@
 
     <include file="indexers.zcml" />
 
-    <adapter for="plone.app.portlets.portlets.navigation.INavigationPortlet"
-             factory=".navigation.ShortTitleNavtreeStrategy"/>
+    <adapter factory=".navigation.ShortTitleNavtreeStrategy"/>
 
     <genericsetup:registerProfile
         name="default"
