@@ -7,7 +7,3 @@ from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
 class INavigationTitleLayer(IDefaultBrowserLayer):
     """Marker interface that defines a browser layer."""
-
-
-class IShortTitleNavtreeStrategy(Interface):
-    """Marker Interface for the NavigationTitle"""
