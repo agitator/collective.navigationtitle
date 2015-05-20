@@ -25,4 +25,4 @@ class ShortTitleNavtreeStrategy(NavtreeStrategy):
 
     def decoratorFactory(self, node):
         node['item'] = BrainWrapper(node['item'])
-        return node
+        return super(ShortTitleNavtreeStrategy, self).decoratorFactory(node)
