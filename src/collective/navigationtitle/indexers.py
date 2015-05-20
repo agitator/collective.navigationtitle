@@ -4,7 +4,7 @@ from plone.indexer import indexer
 
 @indexer(INavigationTitle)
 def short_title(obj):
-    dx = INavigationTitle(obj, None)
-    if dx is None:
+    ob = INavigationTitle(obj, None)
+    if ob is None:
         return None
-    return dx.navigation_title
+    return ob.navigation_title
