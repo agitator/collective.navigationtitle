@@ -9,9 +9,9 @@
 
     <i18n:registerTranslations directory="locales" />
 
-    <include package=".behaviors" />
+    <include file="behavior.zcml" />
 
-    <include file="indexers.zcml" />
+    <include file="indexer.zcml" />
 
     <adapter factory=".navigation.ShortTitleNavtreeStrategy"/>
 
