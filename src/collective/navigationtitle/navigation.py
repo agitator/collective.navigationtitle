@@ -19,6 +19,7 @@ class BrainWrapper(object):
             else:
                 return self.brain.Title
         else:
+            print getattr(self.brain, name)
             return getattr(self.brain, name)
 
 
