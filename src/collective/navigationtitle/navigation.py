@@ -14,8 +14,12 @@ class BrainWrapper(object):
 
     def __getattr__(self, name):
         if name == 'Title':
-            return self.brain.short_title
+            if self.brain.short_title:
+                return self.brain.short_title
+            else:
+                return self.brain.Title
         else:
+            print getattr(self.brain, name)
             return getattr(self.brain, name)
 
 
