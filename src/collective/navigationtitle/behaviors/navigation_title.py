@@ -13,10 +13,10 @@ class INavigationTitle(model.Schema):
     """Adds a field for navigation title after the original title.
     """
 
-    order_after(navigation_title='IBasic.title')
-    order_after(navigation_title='IDublinCore.title')
+    order_after(short_title='IBasic.title')
+    order_after(short_title='IDublinCore.title')
 
-    navigation_title = schema.TextLine(
+    short_title = schema.TextLine(
         title=_(u"Navigation Title"),
         description=_(u"Short title that will be used in navigation."),
         required=False,
@@ -32,9 +32,9 @@ class NavigationTitle(object):
         self.context = context
 
     @property
-    def navigation_title(self):
-        return getattr(self.context, '_navigation_title', None)
+    def short_title(self):
+        return getattr(self.context, '_short_title', None)
 
-    @navigation_title.setter
-    def navigation_title(self, value):
-        self.context._navigation_title = value
+    @short_title.setter
+    def short_title(self, value):
+        self.context._short_title = value

@@ -7,4 +7,4 @@ def short_title(obj):
     ob = INavigationTitle(obj, None)
     if ob is None:
         return None
-    return ob.navigation_title
+    return ob.short_title
