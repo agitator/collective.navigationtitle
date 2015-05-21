@@ -1,4 +1,4 @@
-from .behaviors.navigation_title import INavigationTitle
+from .behavior import INavigationTitle
 from plone.indexer import indexer
 
 
