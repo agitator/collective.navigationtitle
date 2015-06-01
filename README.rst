@@ -7,7 +7,6 @@ If you then fill out the field in your content object, this title will be used i
 
 A big thank you to Jonas Bauman and Jens Klein for all the insights!
 
-Bootstrap this package if needed as described in https://community.plone.org/t/not-using-bootstrap-py-as-default
 
 
 Not Entirely Unlike
