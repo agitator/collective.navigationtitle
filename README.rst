@@ -46,5 +46,5 @@ License is GPL 2, see file ``LICENCE.rst``.
 
 Contributors
 ============
-- Peter Holzer, peter.holzer@agitator.com
+- Peter Holzer <peter.holzer@agitator.com>
 
