@@ -3,7 +3,7 @@ Changelog
 =========
 
 
-0.2 (unreleased)
+0.2 (2015-06-01)
 ----------------
 
 - updated docs
