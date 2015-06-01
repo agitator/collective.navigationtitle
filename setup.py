@@ -8,11 +8,6 @@ from setuptools import setup
 long_description = (
     open('README.rst').read()
     + '\n' +
-    'Contributors\n'
-    '============\n'
-    + '\n' +
-    open('CONTRIBUTORS.rst').read()
-    + '\n' +
     open('CHANGES.rst').read()
     + '\n')
 
@@ -26,15 +21,16 @@ setup(
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 4.3.4",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
+        'License :: OSI Approved :: GNU General Public License (GPL)',
+        'Operating System :: OS Independent',
     ],
     keywords='Python Plone Dexterity',
-    author='Peter Holzer',
-    author_email='peter.holzer@agitator.com',
-    url='http://pypi.python.org/pypi/collective.navigationtitle',
-    license='GPL',
+    author='BlueDynamics Alliance',
+    author_email='dev@bluedynamics.com',
+    url=u'https://bluedynamics.com',
+    license='GNU General Public Licence',
     packages=find_packages('src', exclude=['ez_setup']),
     namespace_packages=['collective'],
     package_dir={'': 'src'},
