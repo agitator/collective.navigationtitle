@@ -14,7 +14,7 @@ long_description = (
 
 setup(
     name='collective.navigationtitle',
-    version='0.3',
+    version='0.4.dev0',
     description="An add-on for Plone that allows to add a title that is used in navigation elements.",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
